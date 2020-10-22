@@ -1,0 +1,23 @@
+### Install python 3.7.1
+brew install pyenv
+PATH=$(pyenv root)/shims:$PATH
+pyenv install 3.7.1
+pyenv global 3.7.1
+python -V should return 3.7.1
+
+### Install python libraries
+# https://amitness.com/2019/07/identify-text-language-python/
+pip install fasttext
+pip install pycountry
+brew install wget
+
+# install training set
+mkdir data
+wget -O data/lid.176.bin https://dl.fbaipublicfiles.com/fasttext/supervised-models/lid.176.bin
+
+
+### Run script
+python main.py
+
+You should see:
+
