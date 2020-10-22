@@ -13,16 +13,31 @@ pip install fasttext
 pip install pycountry
 brew install wget
 
-2. Language translation code
-pip install googletrans
-
 # install training set
 mkdir data
 wget -O data/lid.176.bin https://dl.fbaipublicfiles.com/fasttext/supervised-models/lid.176.bin
+
+
+2. Language translation code
+pip install googletrans
+
+3. Expand contractions
+pip install pycontractions
+
 
 
 ### Run script
 python main.py
 
 You should see:
-
+([['__label__fr']], [array([0.96568173], dtype=float32)])
+fr
+French
+je mange de la nourriture  ->  i eat food
+([['__label__es']], [array([0.9975867], dtype=float32)])
+es
+Spanish
+Hoy es un buen día!  ->  Today is a good day!
+([['__label__en']], [array([0.8415854], dtype=float32)])
+en
+English
