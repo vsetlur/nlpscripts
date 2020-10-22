@@ -6,10 +6,15 @@ pyenv global 3.7.1
 python -V should return 3.7.1
 
 ### Install python libraries
+
+1. Language detection code
 # https://amitness.com/2019/07/identify-text-language-python/
 pip install fasttext
 pip install pycountry
 brew install wget
+
+2. Language translation code
+pip install googletrans
 
 # install training set
 mkdir data
