@@ -21,15 +21,12 @@ wget -O data/lid.176.bin https://dl.fbaipublicfiles.com/fasttext/supervised-mode
 2. Language translation code
 pip install googletrans
 
-3. Expand contractions
-pip install pycontractions
-
 
 
 ### Run script
 python main.py
 
-You should see:
+You should see the followign results in your terminal window:
 ([['__label__fr']], [array([0.96568173], dtype=float32)])
 fr
 French
